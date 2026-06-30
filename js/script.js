@@ -1,10 +1,10 @@
 function login()
 {
-    var name = document.getElementById("name").value;
+    var name = document.getElementById("name").value.trim();
     var className = document.getElementById("class").value;
-    var roll = document.getElementById("roll").value;
-    var phone = document.getElementById("phone").value;
-    var id = document.getElementById("id").value;
+    var roll = document.getElementById("roll").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var id = document.getElementById("id").value.trim();
     var pass = document.getElementById("pass").value;
 
     if(name == "")
@@ -47,10 +47,10 @@ function login()
     sessionStorage.setItem("class", className);
     sessionStorage.setItem("roll", roll);
     sessionStorage.setItem("phone", phone);
-    sessionStorage.setItem("id", id);
+    sessionStorage.setItem("studentId", id);
     sessionStorage.setItem("password", pass);
 
-    window.location.href = "dashboard.html";
+    window.location.href = "home.html";
 }
 
 function logout()

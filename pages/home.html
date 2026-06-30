@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="header">
+
+        <h1>Welcome</h1>
+
+        <h2 id="studentName"></h2>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Student Details</h2>
+
+        <p><b>Name :</b> <span id="studentName2"></span></p>
+
+        <p><b>Class :</b> <span id="studentClass"></span></p>
+
+        <p><b>Roll Number :</b> <span id="studentRoll"></span></p>
+
+        <p><b>Phone Number :</b> <span id="studentPhone"></span></p>
+
+        <p><b>Student ID :</b> <span id="studentId"></span></p>
+
+    </div>
+
+    <div class="menu">
+
+        <button onclick="alert('Marks Page Coming Soon')">
+            📊 Marks
+        </button>
+
+        <button onclick="alert('Attendance Page Coming Soon')">
+            📅 Attendance
+        </button>
+
+        <button onclick="alert('Homework Page Coming Soon')">
+            📚 Homework
+        </button>
+
+        <button onclick="alert('Notices Page Coming Soon')">
+            📢 Notices
+        </button>
+
+        <button onclick="alert('Fees Page Coming Soon')">
+            💰 Fees
+        </button>
+
+        <button onclick="logout()">
+            🚪 Logout
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("studentName").innerHTML =
+sessionStorage.getItem("name");
+
+document.getElementById("studentName2").innerHTML =
+sessionStorage.getItem("name");
+
+document.getElementById("studentClass").innerHTML =
+sessionStorage.getItem("class");
+
+document.getElementById("studentRoll").innerHTML =
+sessionStorage.getItem("roll");
+
+document.getElementById("studentPhone").innerHTML =
+sessionStorage.getItem("phone");
+
+document.getElementById("studentId").innerHTML =
+sessionStorage.getItem("id");
+
+function logout()
+{
+    sessionStorage.clear();
+
+    window.location.href="index.html";
+}
+
+</script>
+
+</body>
+
+</html>
