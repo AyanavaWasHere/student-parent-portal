@@ -50,7 +50,7 @@ function login()
     sessionStorage.setItem("studentId", id);
     sessionStorage.setItem("password", pass);
 
-    window.location.href = "home.html";
+    window.location.href = "pages/home.html";
 }
 
 function logout()
