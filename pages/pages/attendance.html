@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="header">
+
+        <h1>📅 Attendance</h1>
+
+        <h3 id="studentName"></h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Overall Attendance</h2>
+
+        <h1 style="font-size:55px;color:green;">
+            95%
+        </h1>
+
+    </div>
+
+    <div class="card">
+
+        <p><b>Total Working Days :</b> 200</p>
+
+        <p><b>Present :</b> 190</p>
+
+        <p><b>Absent :</b> 10</p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Attendance Status</h2>
+
+        <progress value="95"
+                  max="100"
+                  style="width:100%;height:30px;">
+        </progress>
+
+    </div>
+
+    <div class="menu">
+
+        <button onclick="location.href='home.html'">
+
+            🏠 Home
+
+        </button>
+
+        <button onclick="location.href='fees.html'">
+
+            💰 Fees
+
+        </button>
+
+        <button onclick="location.href='notices.html'">
+
+            📢 Notices
+
+        </button>
+
+        <button onclick="location.href='settings.html'">
+
+            ⚙ Settings
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("studentName").innerHTML =
+localStorage.getItem("name");
+
+</script>
+
+</body>
+
+</html>
