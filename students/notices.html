@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Notices</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="header">
+
+        <h1>📢 School Notices</h1>
+
+        <h3 id="studentName"></h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📢 Independence Day Celebration</h2>
+
+        <p>
+            Independence Day celebration will be held on
+            <b>15 August</b>.
+            Students should report by <b>8:00 AM</b> in proper
+            school uniform.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📝 Parent Teacher Meeting</h2>
+
+        <p>
+            Parent Teacher Meeting will be conducted on
+            <b>22 July</b>.
+            Parents are requested to attend between
+            <b>10:00 AM and 2:00 PM</b>.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🌧 Holiday Notice</h2>
+
+        <p>
+            School will remain closed on Friday due to
+            heavy rainfall as per government instructions.
+        </p>
+
+    </div>
+
+    <div class="menu">
+
+        <button onclick="location.href='home.html'">
+
+            🏠 Home
+
+        </button>
+
+        <button onclick="location.href='attendance.html'">
+
+            📅 Attendance
+
+        </button>
+
+        <button onclick="location.href='fees.html'">
+
+            💰 Fees
+
+        </button>
+
+        <button onclick="location.href='settings.html'">
+
+            ⚙ Settings
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("studentName").innerHTML =
+localStorage.getItem("name");
+
+</script>
+
+</body>
+
+</html>

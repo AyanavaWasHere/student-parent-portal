@@ -4,7 +4,7 @@ function login()
     var className = document.getElementById("class").value;
     var roll = document.getElementById("roll").value.trim();
     var phone = document.getElementById("phone").value.trim();
-    var id = document.getElementById("id").value.trim();
+    var id  = document.getElementById("id").value.trim();
     var pass = document.getElementById("pass").value;
 
     if(name == "")
@@ -50,7 +50,7 @@ function login()
     sessionStorage.setItem("studentId", id);
     sessionStorage.setItem("password", pass);
 
-    window.location.href = "pages/home.html";
+    window.location.href = "sudents/home.html";
 }
 
 function logout()

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Narmada School ERP</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="header">
+
+        <h1>🏫 Narmada School</h1>
+
+        <h2 id="greeting"></h2>
+
+        <h3 id="studentName"></h3>
+
+        <p id="todayDate"></p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📢 Latest Notice</h2>
+
+        <p>
+            School will remain closed on Friday due to heavy rain.
+        </p>
+
+    </div>
+
+    <div class="quick-grid">
+
+        <div class="small-card">
+
+            <h3>📅</h3>
+
+            <h2>95%</h2>
+
+            <p>Attendance</p>
+
+        </div>
+
+        <div class="small-card">
+
+            <h3>💰</h3>
+
+            <h2>Paid</h2>
+
+            <p>Fees</p>
+
+        </div>
+
+        <div class="small-card">
+
+            <h3>📢</h3>
+
+            <h2>1</h2>
+
+            <p>Notice</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="menu">
+
+    <button onclick="location.href='home.html'">
+
+        🏠<br>Home
+
+    </button>
+
+    <button onclick="location.href='attendance.html'">
+
+        📅<br>Attendance
+
+    </button>
+
+    <button onclick="location.href='fees.html'">
+
+        💰<br>Fees
+
+    </button>
+
+    <button onclick="location.href='notices.html'">
+
+        📢<br>Notices
+
+    </button>
+
+    <button onclick="location.href='settings.html'">
+
+        ⚙<br>Settings
+
+    </button>
+
+</div>
+
+<script>
+
+document.getElementById("studentName").innerHTML =
+sessionStorage.getItem("name");
+
+var hour = new Date().getHours();
+
+if(hour < 12)
+{
+    document.getElementById("greeting").innerHTML =
+    "Good Morning,";
+}
+else if(hour < 17)
+{
+    document.getElementById("greeting").innerHTML =
+    "Good Afternoon,";
+}
+else
+{
+    document.getElementById("greeting").innerHTML =
+    "Good Evening,";
+}
+
+var today = new Date();
+
+document.getElementById("todayDate").innerHTML =
+today.toDateString();
+
+</script>
+
+</body>
+
+</html>

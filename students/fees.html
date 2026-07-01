@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Fees</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="header">
+
+        <h1>💰 Fee Details</h1>
+
+        <h3 id="studentName"></h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Fee Status</h2>
+
+        <p><b>Tuition Fee:</b> ₹3,500</p>
+
+        <p><b>Computer Fee:</b> ₹500</p>
+
+        <p><b>Annual Fee:</b> ₹1,000</p>
+
+        <hr style="margin:15px 0;">
+
+        <p style="font-size:22px;">
+            <b>Total:</b> ₹5,000
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Payment Status</h2>
+
+        <p style="color:green;
+                  font-size:24px;
+                  font-weight:bold;">
+
+            ✅ PAID
+
+        </p>
+
+        <br>
+
+        <p><b>Payment Date:</b> 10 June 2026</p>
+
+        <p><b>Receipt Number:</b> NS202600154</p>
+
+    </div>
+
+    <div class="menu">
+
+        <button onclick="location.href='home.html'">
+
+            🏠 Home
+
+        </button>
+
+        <button onclick="location.href='attendance.html'">
+
+            📅 Attendance
+
+        </button>
+
+        <button onclick="location.href='notices.html'">
+
+            📢 Notices
+
+        </button>
+
+        <button onclick="location.href='settings.html'">
+
+            ⚙ Settings
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("studentName").innerHTML =
+localStorage.getItem("name");
+
+</script>
+
+</body>
+
+</html>
